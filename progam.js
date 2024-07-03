@@ -1,15 +1,9 @@
-//quera.org/problemset/2885
-
 class Solution {
    /**
     * @param {number} name
     */
-   fnc(s) {
-      let result = "";
-      for (let i = 0; i < s; i++) {
-         result = result + `man khoshghlab hastam \n`;
-      }
-      console.log(result);
+   fnc() {
+      console.log("result");
    }
 }
 
@@ -19,5 +13,5 @@ if (typeof readline === "function") {
    solution.fnc(readline());
 } else {
    //This is for manual test
-   solution.fnc(3);
+   solution.fnc();
 }
