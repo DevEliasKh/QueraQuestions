@@ -4,7 +4,7 @@ class Solution {
    /**
     * @param {number} name
     */
-   fnc(input) {
+   fnc(...input) {
       const hRegex = new RegExp("HAFEZ");
       const mRegex = new RegExp("MOLANA");
       let result = [];
@@ -14,7 +14,7 @@ class Solution {
          }
       }
       if (result.length != 0) {
-         console.log(result);
+         console.log(result.join(" "));
       } else {
          console.log("NOT FOUND!");
       }
@@ -27,11 +27,11 @@ if (typeof readline === "function") {
    solution.fnc(readline());
 } else {
    //This is for manual test
-   solution.fnc([
+   solution.fnc(
       "47-MOLANA",
       "BOND-007",
       "RF-MOLANA18",
       "MARICA-13",
-      "13A-HAFEZLsL",
-   ]);
+      "13A-HAFEZLsL"
+   );
 }
